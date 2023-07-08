@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap');
+
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+.quote-box {
+  border: 1px solid black;
+  width: 550px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 13px 16px 0px 0px #000000;
+  -moz-box-shadow: 13px 16px 0px 0px #000000;
+  box-shadow: 13px 16px 0px 0px #000000;
+}
+
+.quote {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.quote-para {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.author {
+  font-size: 1.25rem;
+  display: flex;
+  color: gray;
+  padding-top: 1rem;
+  justify-content: flex-end;
+  font-family: 'Hind', sans-serif;
+}
+
+.buttons {
+  padding-bottom: 0.75=rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+a {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size:  3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .quote-box{
+    width: 250px;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .quote-para {
+    font-size: 1.25rem;
+  }
+  .author{
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .quote-box{
+    width: 400px;
+  }
+  .quote-para {
+    font-size: 1.5rem;
+  }
+  .author{
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .quote-box{
+    width: 500px;
+  }
+  .quote-para {
+    font-size: 1.7rem;
+  }
+  .author{
+    font-size: 1rem;
+  }
+}
