@@ -1,20 +1,43 @@
-## Projects
+# This repo contains all the project I build for obtaining the Front End Development Libraries Certification of Free Code Camp Curriculum
 
-### 1. Random Quote Generator ![Live Deploytment](https://random-quote-generator-downloader.vercel.app/)
+# Projects: 
 
-##### What it does and features?
-It is a random quote generator. You can download the quote in png file, tweet the quote using tweet button and click the refresh button to generate a new quote.
+## 1. Random Quote Generator
 
-#### Screenshot
+This is a web app that generates random quotes and lets you download and tweet them
+
+### Features
+
+- Download the quote as a PNG file
+- Tweet the quote using the tweet button
+- Refresh the quote using the refresh button
+- Responsive design and elegant UI
+
+### Screenshot
+
 ![image](https://github.com/ranjanmangla1/fcc-frontend-dev-library-certification/assets/93506927/593aad65-90d2-407b-9b33-644efcb890af)
 
-##### Set up
-Clone this repo and do:
-'''
+### Live Demo
+
+You can see a live demo of the app [here](https://random-quote-generator-downloader.vercel.app/).
+
+### Set up
+
+To run the app locally, follow these steps:
+
+- Clone this repo and cd into it
+```
+git clone https://github.com/ranjanmangla1/fcc-frontend-dev-library-certification.git
 cd Random-Quote-Generator
-'''
-then do,
-'''
+```
+- Install the dependencies
+```
+npm install
+```
+- Start the development server
+```
 npm run dev
-'''
-You're good to Go!
+```
+- Open http://localhost:3000 in your browser
+
+Enjoy! 😊
