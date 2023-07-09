@@ -56,13 +56,13 @@ export default function App() {
       <div className='heading'>
         <p>Random Quote Generator</p>
       </div>
-      <div className="quote-box">
-        <div className="quote" ref={quoteRef}>
-          <p className="quote-para">
+      <div className="quote-box" id="quote-box">
+        <div className="quote" ref={quoteRef} id="quote-box">
+          <p className="quote-para" id="text">
             <FontAwesomeIcon style={{marginRight: "10px"}} icon={faQuoteLeft} color='black' />
             <span style={{ textAlign: "center" }}>{quote}</span>
           </p>
-          <p className='author'>
+          <p className='author' id="author">
             - {author ? author : "unknown"} 
           </p>
         </div>
@@ -73,12 +73,13 @@ export default function App() {
           <a 
              data-tooltip-id="Twitter" data-tooltip-content="Twitter"
               className="twitter-share-button"
+              id="tweet-quote"
               href={`https://twitter.com/intent/tweet?text=${quote}%0A-${author}%0A%23quotes`}
           >
               <FontAwesomeIcon icon={faTwitter} size="1x" title="Share it on Twitter" color="black" />
           </a>
-            <button onClick={getQuote} data-tooltip-id="Refresh" data-tooltip-content="Refresh"><FontAwesomeIcon icon={faRefresh} title="Refresh" size="1x" color="black" data-tooltip="Refresh" data-tooltip-position="bottom" /></button>
-            <button onClick={handleDownload} data-tooltip-id="Download" data-tooltip-content="Download"><FontAwesomeIcon icon={faDownload} title='Download' size="1x" color="black" /></button>
+            <button id="new-quote" onClick={getQuote} data-tooltip-id="Refresh" data-tooltip-content="Refresh"><FontAwesomeIcon icon={faRefresh} title="Refresh" size="1x" color="black" data-tooltip="Refresh" data-tooltip-position="bottom" /></button>
+            <button id="download" onClick={handleDownload} data-tooltip-id="Download" data-tooltip-content="Download"><FontAwesomeIcon icon={faDownload} title='Download' size="1x" color="black" /></button>
         </div>
       </div>
     </main>
